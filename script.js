@@ -1,32 +1,44 @@
-console.log("Hello World!");
-// 1. Create an array called favoriteFoods with at least 6 foods you love.
 
+// 1. Create an array called favoriteFoods with at least 6 foods you love.
+let foodList = ["CheeseBurgers", "Japanese", "Ice Cream", "Cajun", "Indian", "Italian"];
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
-
-
-
-
+for (let i = 0; i < foodList.length; i++) {
+    console.log("One of my favorite foods is " + foodList[i] + ".");
+} 
 
 // 3. Print out the rating for each food with a ranking like:
 // "My #1 favorite food is Ramen" (copy/paste for all items)
 // "My #2 favorite food is Sushi"
 // ...etc.
 
-
-
-
+    console.log("My # 1 is CheeseBurgers");
+    console.log("My # 2 is Japanese");
+    console.log("My # 3 is Indian");
+    console.log("My # 4 is Italian");
+    console.log("My # 5 is Cajun");
+    console.log("My # 6 is Ice Cream");
 
 // 4a. Create a function printFoodRecommendation(foodName) that prints out the following for the foodName provided
     // "Have you ever tried ____?"
     // "I always recommend ____ to friends."
     // "Trust me — ____ is delicious."
+function printFoodRecommendation(foodName) {
+    console.log("Have you ever tried " + foodName + "?");
+    console.log("I always recommend " + foodName + " to friends.");
+    console.log("Trust me — " + foodName + " is delicious."); 
+}
+
 
 
 
 
 // 4b. Call the function at least 3 times
+printFoodRecommendation("CheeseBurgers");
+printFoodRecommendation("Japanese");
+printFoodRecommendation("Ice Cream");
+
 
 
 
@@ -36,6 +48,11 @@ let friendFavorites = [
   ];
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
+for (let i = 0; i < friendFavorites.length; i++) {
+    if (friendFavorites[i].includes("a") || friendFavorites[i].includes("A")) {
+        console.log(friendFavorites[i]);
+    }
+} 
 
 
 
@@ -47,12 +64,13 @@ let friendFavorites = [
 
 
 
-// 8. Create another array shortFoodNames for foods 6 characters or shorter.
 
+// 8. Create another array shortFoodNames for foods 6 characters or shorter.
 
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
+
 
 
 // 10. STRETCH: Find the longest food name and print:
